@@ -3,23 +3,35 @@
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 100%; }
+  #about h2 {
+    height: 30px;
+    margin: 25px auto;
+    border-bottom: 3px solid #78A8E2; }
   #about div {
     width: 75%;
+    font-size: 1.3rem;
     margin: 10px auto; }
 
 #education h2 {
-  text-align: center; }
+  width: 25%;
+  margin: 5px auto;
+  text-align: center;
+  border-bottom: 3px solid #78A8E2; }
 #education .education-item {
   background: whitesmoke;
   width: 50%;
   padding: 5px;
   border: 1px solid black;
-  margin: 5px auto; }
+  margin: 10px auto; }
 
 #experience {
-  background: #bbbabd; }
+  background: #eae9ec;
+  box-shadow: 4px 1px 4px 1px rgba(0, 0, 0, 0.9); }
   #experience h2 {
-    text-align: center; }
+    width: 25%;
+    margin: 5px auto;
+    text-align: center;
+    border-bottom: 3px solid #78A8E2; }
   #experience .experience-item {
     background: whitesmoke;
     width: 50%;
@@ -28,15 +40,19 @@
     margin: 10px auto; }
 
 #projects {
-  background: #bbbabd; }
+  background: #eae9ec;
+  box-shadow: 4px 1px 4px 1px rgba(0, 0, 0, 0.9); }
   #projects h2 {
-    text-align: center; }
+    width: 25%;
+    margin: 5px auto;
+    text-align: center;
+    border-bottom: 3px solid #78A8E2; }
   #projects .project-item {
     background: whitesmoke;
     width: 50%;
     padding: 5px;
     border: 1px solid black;
-    margin: 5px auto;
+    margin: 10px auto;
     display: grid;
     grid-template-columns: 1fr 3fr; }
     #projects .project-item h3 {
@@ -46,7 +62,7 @@
 
 #contact {
   background: #345995;
-  padding: 15px 0; }
+  padding: 25px 0; }
   #contact form {
     font-size: 1.5rem;
     text-align: center;
@@ -54,18 +70,34 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 5fr; }
+    #contact form h3 {
+      color: #fff; }
     #contact form input {
-      height: 25px;
-      width: 30rem !important;
+      height: 30px;
       margin-bottom: 5px; }
     #contact form textarea {
       margin-bottom: 5px;
-      height: 100px; }
+      height: 100px;
+      resize: none; }
+    #contact form input, #contact form textarea {
+      color: white;
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.3);
+      border: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 30rem !important; }
+    #contact form textarea::placeholder, #contact form input::placeholder {
+      color: white;
+      font-size: 1rem;
+      font-weight: bold; }
     #contact form button {
       font-size: 1rem;
       color: #78A8E2;
       border: none;
-      height: 30px;
+      height: 35px;
       border-radius: 5px; }
 
 html, body {
@@ -88,6 +120,7 @@ nav {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px; }
   nav a {
+    font-size: 1.3rem;
     color: #78A8E2;
     text-decoration: none;
     margin: 10px;
@@ -111,8 +144,10 @@ nav {
       height: 350px;
       width: 350px; }
     #header div h1 {
+      font-size: 2.5rem;
       margin: 10px 0 0 0; }
     #header div h2 {
+      font-size: 1.5rem;
       color: #78A8E2;
       margin: 0 0 10px 0; }
     #header div button {
@@ -120,19 +155,37 @@ nav {
       background: transparent;
       color: #ffffff;
       font-size: 1em;
+      font-weight: bold;
       height: 50px;
       padding: 10px;
-      border: 1px solid white;
+      border: 2px solid white;
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
       border-radius: 15px; }
     #header div #skills li {
+      cursor: pointer;
       display: inline-block;
       font-size: 1.3rem;
       padding: 10px;
       margin: 5px;
       list-style: none;
-      background: gray; }
+      background: rgba(0, 0, 0, 0.3);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  footer ul {
+    right: 0; }
+  footer li {
+    display: inline-block;
+    list-style: none; }
+  footer #copyright {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4; }
 
 .shadow {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.9); }

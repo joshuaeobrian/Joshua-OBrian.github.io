@@ -26,6 +26,7 @@ html, body{
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     a{
+      font-size: 1.3rem;
       color: #78A8E2;
       text-decoration: none;
       margin: 10px;
@@ -54,9 +55,11 @@ html, body{
       width: 350px;
     }
     h1{
+      font-size: 2.5rem;
       margin: 10px 0 0 0;
     }
     h2{
+      font-size: 1.5rem;
       color: #78A8E2;
       margin: 0 0 10px 0;
     }
@@ -65,30 +68,52 @@ html, body{
       background: transparent;
       color: #ffffff;
       font-size: 1em;
+      font-weight: bold;
       height: 50px;
       padding: 10px;
-      border: 1px solid white;
+      border: 2px solid white;
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
       border-radius: 15px;
     }
     #skills{
       li{
+        cursor: pointer;
         display: inline-block;
         font-size: 1.3rem;
         padding: 10px;
         margin: 5px;
         //width: 50px;
         list-style: none;
-        background: gray;
+        background: rgba(0,0,0,.3);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
       }
     }
+  }
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  ul{
+    right: 0;
+  }
+  li{
+    display: inline-block;
+    list-style: none;
+  }
+  #copyright{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end:4;
   }
 }
 .shadow{
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.9);
 }
 #about, #experience, #education, #projects{
+
   padding: 20px 0;
 }
 

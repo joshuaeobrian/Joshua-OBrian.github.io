@@ -25,6 +25,7 @@
             <button>Download Resume</button>
             <div>
                 <h4>Skills:</h4>
+                <!--TODO: componentize and load from api-->
                 <ul id="skills">
                     <li class="shadow">Java</li>
                     <li class="shadow">SQL</li>
@@ -41,32 +42,46 @@
         </div>
     </div>
     <div id="about">
-       <h2>About:</h2>
+       <h2>About</h2>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis culpa deserunt dignissimos doloribus ducimus eaque fuga harum, laboriosam mollitia natus nesciunt nihil non porro quae tempore temporibus voluptates voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci beatae id illum laboriosam laudantium magnam maxime, modi molestiae non omnis, porro quod ut voluptas voluptates? A illo odio unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eligendi modi mollitia voluptates. Accusantium ad cumque eaque est, fugit ipsa minima nihil, nobis odio omnis possimus praesentium provident sed vitae.</p>
         </div>
         <!--About section-->
     </div>
     <div id="experience">
-        <h2>Experience:</h2>
+        <h2>Experience</h2>
         <!--Experience-->
+        <!--TODO: componentize and load from api-->
         <div class="experience-item shadow">
             <h3>AT & T</h3>
             <h3>Feb 2017 - May 2017</h3>
-            <h4>Java Developer</h4>
+            <h4>Web Developer</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id modi recusandae. Ab accusamus blanditiis commodi, debitis, dolor error minus mollitia nisi perspiciatis quaerat quia tempora unde veritatis, vero voluptatum.</p>
         </div>
 
         <div class="experience-item shadow">
             <h3>Front Edge Marketing</h3>
             <h3>Feb 2010 - Dec 2011</h3>
-            <h4>Culinary Arts</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id modi recusandae. Ab accusamus blanditiis commodi, debitis, dolor error minus mollitia nisi perspiciatis quaerat quia tempora unde veritatis, vero voluptatum.</p>
+            <h4>Junior Developer - Java, C#, PHP, HTML, CSS</h4>
+            <ul>
+                <li>Built custom inventory software with Java to track computers, servers, parts, custom bar codes and serials for servers.</li>
+                <li>Created C# application that connects to a web service to configure Window 7 machines remotely.</li>
+                <li>Managed company websites in PHP, HTML, CSS</li>
+            </ul>
+            <h4>System Administrator / Lead Technician / Guru</h4>
+            <ul>
+                <li>24/7 on call help desk.</li>
+                <li>Software testing and debugging.</li>
+                <li>Setup and configured replication for MSSQL Servers.</li>
+                <li>Managed Technicians and oversaw installs.</li>
+                <li>Creation of Scripts and tools for technicians and clients to use.</li>
+            </ul>
         </div>
     </div>
     <div id="education">
-        <h2>Education:</h2>
+        <h2>Education</h2>
         <!--Education-->
+        <!--TODO: componentize and load from api-->
         <div class="education-item shadow">
             <h3>The Iron Yard</h3>
             <h3>Feb 2017 - May 2017</h3>
@@ -85,6 +100,7 @@
     <div id="projects">
         <h2>Projects</h2>
         <!--projects-->
+        <!--TODO: componentize and load from api-->
         <div class="project-item shadow">
             <a href="http://ballad.herokuapp.com/" target="_blank">
                 <img src="http://via.placeholder.com/150x150"/>
@@ -111,6 +127,7 @@
             </div>
         </div>
     </div>
+    <!--TODO: Make into modal-->
     <div id="contact">
         <form>
             <h3>Get In Touch</h3>
@@ -122,8 +139,10 @@
     </div>
 
     <footer>
+        <div></div>
+        <div></div>
         <!--copy right-->
-        <h5>Copyright - 2018 Joshua OBrian</h5>
+
         <!--Icons-->
         <ul>
             <li>GitHub</li>
@@ -131,6 +150,9 @@
             <li>Stack Overflow</li>
             <li>Google</li>
         </ul>
+        <div id="copyright">
+            <h5>Copyright&copy;  2018 Joshua OBrian</h5>
+        </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--<script src="vendors/react.js"></script>-->

@@ -1,6 +1,7 @@
 #contact{
   background: #345995;
-  padding: 15px 0;
+  padding: 25px 0;
+
   form{
     font-size: 1.5rem;
     text-align: center;
@@ -9,21 +10,40 @@
     //padding: 0 30%;
     display: grid;
     grid-template-columns: 5fr;
+    h3{
+      color: #fff;
+    }
     input{
-      height:25px;
-      width:30rem !important;
+      height:30px;
       margin-bottom: 5px;
     }
-    textarea{
 
+    textarea{
       margin-bottom: 5px;
       height: 100px;
+      resize:none;
+    }
+    input, textarea{
+      color: white;
+      padding: 5px;
+      background: rgba(0,0,0,.3);
+      border:none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      font-size: 1rem;
+      width:30rem !important;
+    }
+    textarea::placeholder,input::placeholder{
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
     }
     button{
       font-size: 1rem;
       color: #78A8E2;
       border: none;
-      height: 30px;
+      height: 35px;
       border-radius: 5px;
     }
   }

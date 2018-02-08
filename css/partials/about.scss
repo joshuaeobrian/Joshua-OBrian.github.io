@@ -4,8 +4,15 @@
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 100%;
+  h2{
+    height: 30px;
+    margin: 25px auto;
+    border-bottom: 3px solid #78A8E2;
+
+  }
   div{
     width: 75%;
+    font-size: 1.3rem;
     margin: 10px auto;
   }
 }
