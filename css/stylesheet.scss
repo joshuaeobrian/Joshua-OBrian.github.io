@@ -1,0 +1,98 @@
+@import "partials/about";
+@import "partials/education";
+@import "partials/experience";
+@import "partials/projects";
+@import "partials/forms";
+html, body{
+  margin: 0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+
+  nav{
+    background: white;
+    top: 0;
+    //height: 50px;
+    //border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    //grid-template-rows: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    a{
+      color: #78A8E2;
+      text-decoration: none;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    a:hover{
+      background: lightgray;
+    }
+  }
+
+
+#header{
+  background: #345995;
+  height: 100%;
+  div{
+    color: #ffffff;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    #profile-image{
+      margin-top: 50px;
+      background: rgba(0,0,0,0.5);
+      height: 350px;
+      width: 350px;
+    }
+    h1{
+      margin: 10px 0 0 0;
+    }
+    h2{
+      color: #78A8E2;
+      margin: 0 0 10px 0;
+    }
+    button{
+      cursor: pointer;
+      background: transparent;
+      color: #ffffff;
+      font-size: 1em;
+      height: 50px;
+      padding: 10px;
+      border: 1px solid white;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+    }
+    #skills{
+      li{
+        display: inline-block;
+        font-size: 1.3rem;
+        padding: 10px;
+        margin: 5px;
+        //width: 50px;
+        list-style: none;
+        background: gray;
+      }
+    }
+  }
+}
+.shadow{
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.9);
+}
+#about, #experience, #education, #projects{
+  padding: 20px 0;
+}
+
+
+
+
+

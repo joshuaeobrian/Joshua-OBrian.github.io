@@ -2,41 +2,140 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
     <title>Title</title>
 </head>
 <body>
-    <header>
+    <div id="header">
         <nav>
-
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
         <div>
+            <div id="profile-image">
+
+            </div>
             <!--Name-->
-            <!--Skills-->
+            <h1>Joshua OBrian</h1>
+            <h2>Software Developer</h2>
             <!--Resume button-->
+            <button>Download Resume</button>
+            <div>
+                <h4>Skills:</h4>
+                <ul id="skills">
+                    <li class="shadow">Java</li>
+                    <li class="shadow">SQL</li>
+                    <li class="shadow">C#</li>
+                    <li class="shadow">JavaScript</li>
+                    <li class="shadow">TypeScript</li>
+                    <li class="shadow">PHP</li>
+                    <li class="shadow">Python</li>
+                    <li class="shadow">HTML</li>
+                    <li class="shadow">CSS</li>
+                    <li class="shadow">SASS</li>
+                </ul>
+            </div>
         </div>
-    </header>
-    <div id="container">
-        loading...
+    </div>
+    <div id="about">
+       <h2>About:</h2>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis culpa deserunt dignissimos doloribus ducimus eaque fuga harum, laboriosam mollitia natus nesciunt nihil non porro quae tempore temporibus voluptates voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci beatae id illum laboriosam laudantium magnam maxime, modi molestiae non omnis, porro quod ut voluptas voluptates? A illo odio unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eligendi modi mollitia voluptates. Accusantium ad cumque eaque est, fugit ipsa minima nihil, nobis odio omnis possimus praesentium provident sed vitae.</p>
+        </div>
         <!--About section-->
     </div>
-    <div>
+    <div id="experience">
+        <h2>Experience:</h2>
         <!--Experience-->
+        <div class="experience-item shadow">
+            <h3>AT & T</h3>
+            <h3>Feb 2017 - May 2017</h3>
+            <h4>Java Developer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id modi recusandae. Ab accusamus blanditiis commodi, debitis, dolor error minus mollitia nisi perspiciatis quaerat quia tempora unde veritatis, vero voluptatum.</p>
+        </div>
+
+        <div class="experience-item shadow">
+            <h3>Front Edge Marketing</h3>
+            <h3>Feb 2010 - Dec 2011</h3>
+            <h4>Culinary Arts</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id modi recusandae. Ab accusamus blanditiis commodi, debitis, dolor error minus mollitia nisi perspiciatis quaerat quia tempora unde veritatis, vero voluptatum.</p>
+        </div>
     </div>
-    <div>
+    <div id="education">
+        <h2>Education:</h2>
         <!--Education-->
+        <div class="education-item shadow">
+            <h3>The Iron Yard</h3>
+            <h3>Feb 2017 - May 2017</h3>
+            <h4>Java Developer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id modi recusandae. Ab accusamus blanditiis commodi, debitis, dolor error minus mollitia nisi perspiciatis quaerat quia tempora unde veritatis, vero voluptatum.</p>
+        </div>
+
+        <div class="education-item shadow">
+            <h3>The Art Institute</h3>
+            <h3>Feb 2010 - Dec 2011</h3>
+            <h4>Culinary Arts</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id modi recusandae. Ab accusamus blanditiis commodi, debitis, dolor error minus mollitia nisi perspiciatis quaerat quia tempora unde veritatis, vero voluptatum.</p>
+        </div>
+
     </div>
-    <div>
+    <div id="projects">
+        <h2>Projects</h2>
         <!--projects-->
+        <div class="project-item shadow">
+            <a href="http://ballad.herokuapp.com/" target="_blank">
+                <img src="http://via.placeholder.com/150x150"/>
+            </a>
+            <div>
+                <h3>Ballad</h3>
+                <p>Ballad is an application that allows people of all ages to rhyme words for songs and poems. This application allows you to Create, Store, and share your ballads.</p>
+                <p><b>Tools:</b> Java, Spring, Thyme-leaf, JavaScript, jQuery, HTML, CSS, Git, and PostgresSQL.</p>
+                <a>i</a>
+                <a>i</a>
+            </div>
+        </div>
+
+        <div class="project-item shadow">
+            <a href="https://quiet-gorge-97766.herokuapp.com/" target="_blank">
+                <img src="http://via.placeholder.com/150x150"/>
+            </a>
+            <div>
+                <h3>Jeopardy</h3>
+                <p>In this project, users play a Jeopardy-style game by flipping tiles to answer questions and earn points. </p>
+                <p><b>Tools:</b> Java, Spring, Thyme-leaf, JavaScript, jQuery, HTML, CSS, SQL, and Postgres.</p>
+                <a>i</a>
+                <a>i</a>
+            </div>
+        </div>
     </div>
+    <div id="contact">
+        <form>
+            <h3>Get In Touch</h3>
+            <input type="text" placeholder="Name"/>
+            <input type="email" placeholder="Email"/>
+            <textarea placeholder="Your Message"></textarea>
+            <button>Send</button>
+        </form>
+    </div>
+
     <footer>
         <!--copy right-->
-
+        <h5>Copyright - 2018 Joshua OBrian</h5>
         <!--Icons-->
+        <ul>
+            <li>GitHub</li>
+            <li>Linkedin</li>
+            <li>Stack Overflow</li>
+            <li>Google</li>
+        </ul>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="vendors/react.js"></script>
-    <script src="vendors/react-dom.js"></script>
-    <script src="vendors/babel-browser.min.js"></script>
-    <script type="text/babel" src="js/app.jsx"></script>
+    <!--<script src="vendors/react.js"></script>-->
+    <!--<script src="vendors/react-dom.js"></script>-->
+    <!--<script src="vendors/babel-browser.min.js"></script>-->
+    <!--<script type="text/babel" src="js/app.jsx"></script>-->
 </body>
 </html>

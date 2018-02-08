@@ -1,0 +1,21 @@
+#projects{
+  background: #bbbabd;
+  h2{
+    text-align: center;
+  }
+  .project-item{
+    background: whitesmoke;
+    width: 50%;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    h3{
+      margin: 5px 0;
+    }
+    p{
+      margin: 5px 5px 1px 0;
+    }
+  }
+}
