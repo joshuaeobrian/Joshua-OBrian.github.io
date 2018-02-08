@@ -55,6 +55,9 @@
     margin: 10px auto;
     display: grid;
     grid-template-columns: 1fr 3fr; }
+    #projects .project-item img {
+      width: 150px;
+      height: 125px; }
     #projects .project-item h3 {
       margin: 5px 0; }
     #projects .project-item p {
