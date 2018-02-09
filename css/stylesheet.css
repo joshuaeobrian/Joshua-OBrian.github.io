@@ -9,7 +9,7 @@
     border-bottom: 3px solid #78A8E2; }
   #about div {
     width: 75%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 10px auto; }
 
 #education h2 {
@@ -23,6 +23,18 @@
   padding: 5px;
   border: 1px solid black;
   margin: 10px auto; }
+  #education .education-item div {
+    width: 90%;
+    margin: 10px auto; }
+    #education .education-item div h3 {
+      margin-top: 0;
+      margin-bottom: 0; }
+    #education .education-item div h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-style: italic; }
+    #education .education-item div p {
+      margin-top: .5rem; }
 
 #experience {
   background: #eae9ec;
@@ -38,6 +50,17 @@
     padding: 5px;
     border: 1px solid black;
     margin: 10px auto; }
+    #experience .experience-item div {
+      width: 90%;
+      margin: 0 auto; }
+      #experience .experience-item div h3 {
+        margin-bottom: 0; }
+      #experience .experience-item div h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-style: italic; }
+      #experience .experience-item div ul {
+        margin-top: .5rem; }
 
 #projects {
   background: #eae9ec;
@@ -62,27 +85,43 @@
       margin: 5px 0; }
     #projects .project-item p {
       margin: 5px 5px 1px 0; }
+    #projects .project-item .icon-right {
+      margin-right: 10px;
+      float: right; }
+      #projects .project-item .icon-right a {
+        margin: 5px;
+        color: #000;
+        font-size: 1.5rem; }
 
-#contact {
+.contact {
+  display: none;
   background: #345995;
-  padding: 25px 0; }
-  #contact form {
+  padding: 10% 0; }
+  .contact form {
+    background: #345995;
     font-size: 1.5rem;
     text-align: center;
-    width: 30%;
+    width: 50%;
+    border-radius: 5px;
     margin: 0 auto;
+    padding: 0 0 50px 0;
     display: grid;
-    grid-template-columns: 5fr; }
-    #contact form h3 {
+    grid-template-columns: 1fr; }
+    .contact form a {
+      color: #fff;
+      float: right;
+      text-align: right;
+      margin: 10px; }
+    .contact form h3 {
       color: #fff; }
-    #contact form input {
-      height: 30px;
-      margin-bottom: 5px; }
-    #contact form textarea {
+    .contact form input {
+      height: 30px; }
+    .contact form textarea {
       margin-bottom: 5px;
       height: 100px;
       resize: none; }
-    #contact form input, #contact form textarea {
+    .contact form input, .contact form textarea {
+      margin: 5px auto;
       color: white;
       padding: 5px;
       background: rgba(0, 0, 0, 0.3);
@@ -92,16 +131,18 @@
       border-radius: 5px;
       font-size: 1rem;
       width: 30rem !important; }
-    #contact form textarea::placeholder, #contact form input::placeholder {
+    .contact form textarea::placeholder, .contact form input::placeholder {
       color: white;
       font-size: 1rem;
       font-weight: bold; }
-    #contact form button {
+    .contact form button {
       font-size: 1rem;
       color: #78A8E2;
       border: none;
       height: 35px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      width: 30rem !important;
+      margin: 5px auto; }
 
 html, body {
   margin: 0;
@@ -129,7 +170,8 @@ nav {
     margin: 10px;
     padding: 10px;
     text-align: center;
-    vertical-align: middle; }
+    vertical-align: middle;
+    border-radius: 5px; }
   nav a:hover {
     background: lightgray; }
 
@@ -143,7 +185,6 @@ nav {
     text-align: center; }
     #header div #profile-image {
       margin-top: 50px;
-      background: rgba(0, 0, 0, 0.5);
       height: 350px;
       width: 350px; }
     #header div h1 {
@@ -164,7 +205,16 @@ nav {
       border: 2px solid white;
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
-      border-radius: 15px; }
+      border-radius: 15px;
+      outline: none; }
+    #header div button:hover {
+      color: #78A8E2;
+      background: rgba(0, 0, 0, 0.3);
+      border-color: #78A8E2;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.9); }
+    #header div button:active {
+      box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.9);
+      outline: none; }
     #header div #skills li {
       cursor: pointer;
       display: inline-block;
@@ -177,14 +227,36 @@ nav {
       -moz-border-radius: 5px;
       border-radius: 5px; }
 
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /*filter:alpha(opacity=50);*/
+  /*-moz-opacity:0.5;*/
+  /*-khtml-opacity: 0.5;*/
+  /*opacity: .8;*/
+  z-index: 10000; }
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
+  footer #bottom-split {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: #345995;
+    height: 100px; }
   footer ul {
-    right: 0; }
+    margin-left: 25%; }
   footer li {
     display: inline-block;
-    list-style: none; }
+    list-style: none;
+    margin: 5px 10px; }
+    footer li a {
+      font-size: 2rem;
+      color: black; }
   footer #copyright {
     text-align: center;
     grid-column-start: 1;

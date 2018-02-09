@@ -4,21 +4,21 @@
     <meta charset="UTF-8"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
-    <title>Title</title>
+    <title>Joshua E. O'Brian</title>
 </head>
 <body>
     <div id="header">
         <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="scrollTo">About</a>
+            <a href="#experience" class="scrollTo">Experience</a>
+            <a href="#education" class="scrollTo">Education</a>
+            <a href="#projects" class="scrollTo">Projects</a>
+            <a class="show-contact-form">Contact</a>
         </nav>
         <div>
-            <div id="profile-image">
+            <img id="profile-image" src="images/profile-image.png">
 
-            </div>
+            </img>
             <!--Name-->
             <h1>Joshua OBrian</h1>
             <h2>Software Developer</h2>
@@ -42,128 +42,163 @@
             </div>
         </div>
     </div>
-    <div id="about">
-       <h2>About</h2>
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis culpa deserunt dignissimos doloribus ducimus eaque fuga harum, laboriosam mollitia natus nesciunt nihil non porro quae tempore temporibus voluptates voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci beatae id illum laboriosam laudantium magnam maxime, modi molestiae non omnis, porro quod ut voluptas voluptates? A illo odio unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eligendi modi mollitia voluptates. Accusantium ad cumque eaque est, fugit ipsa minima nihil, nobis odio omnis possimus praesentium provident sed vitae.</p>
-        </div>
-        <!--About section-->
-    </div>
-    <div id="experience">
-        <h2>Experience</h2>
-        <!--Experience-->
-        <!--TODO: componentize and load from api-->
-        <div class="experience-item shadow">
-            <h3>AT & T</h3>
-            <h3>Feb 2017 - May 2017</h3>
-            <h4>Web Developer</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id modi recusandae. Ab accusamus blanditiis commodi, debitis, dolor error minus mollitia nisi perspiciatis quaerat quia tempora unde veritatis, vero voluptatum.</p>
-        </div>
-
-        <div class="experience-item shadow">
-            <h3>Front Edge Marketing</h3>
-            <h3>Feb 2016 - Dec 2017</h3>
-            <h4>Junior Developer - Java, C#, PHP, HTML, CSS</h4>
-            <ul>
-                <li>Built custom inventory software with Java to track computers, servers, parts, custom bar codes and serials for servers.</li>
-                <li>Created C# application that connects to a web service to configure Window 7 machines remotely.</li>
-                <li>Managed company websites in PHP, HTML, CSS</li>
-            </ul>
-        </div>
-
-        <div class="experience-item shadow">
-            <h3>Front Edge Marketing</h3>
-            <h3>Feb 2010 - Jan 2018</h3>
-            <h4>System Administrator / Lead Technician / Guru</h4>
-            <ul>
-                <li>24/7 on call help desk.</li>
-                <li>Software testing and debugging.</li>
-                <li>Setup and configured replication for MSSQL Servers.</li>
-                <li>Managed Technicians and oversaw installs.</li>
-                <li>Creation of Scripts and tools for technicians and clients to use.</li>
-            </ul>
-        </div>
-    </div>
-    <div id="education">
-        <h2>Education</h2>
-        <!--Education-->
-        <!--TODO: componentize and load from api-->
-        <div class="education-item shadow">
-            <h3>The Iron Yard</h3>
-            <h3>Feb 2017 - May 2017</h3>
-            <h4>Java Developer</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id modi recusandae. Ab accusamus blanditiis commodi, debitis, dolor error minus mollitia nisi perspiciatis quaerat quia tempora unde veritatis, vero voluptatum.</p>
-        </div>
-
-        <div class="education-item shadow">
-            <h3>The Art Institute</h3>
-            <h3>Feb 2010 - Dec 2011</h3>
-            <h4>Culinary Arts</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id modi recusandae. Ab accusamus blanditiis commodi, debitis, dolor error minus mollitia nisi perspiciatis quaerat quia tempora unde veritatis, vero voluptatum.</p>
-        </div>
-
-    </div>
-    <div id="projects">
-        <h2>Projects</h2>
-        <!--projects-->
-        <!--TODO: componentize and load from api-->
-        <div class="project-item shadow">
-            <a href="http://ballad.herokuapp.com/" target="_blank">
-                <img src="./images/ballad.png"/>
-            </a>
+    <div id="container">
+        <div class="section" id="about">
+           <h2>About</h2>
             <div>
-                <h3>Ballad</h3>
-                <p>Ballad is an application that allows people of all ages to rhyme words for songs and poems. This application allows you to Create, Store, and share your ballads.</p>
-                <p><b>Tools:</b> Java, Spring, Thyme-leaf, JavaScript, jQuery, HTML, CSS, Git, and PostgresSQL.</p>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a><i class="fas fa-eye"></i></a>
+                <p>I am originally from Upstate New York, I moved to North Carolina for a change of pace. My first 2 years here I went to school                at the Art Institute for Culinary arts. During that time I got a job working for Front Edge Marketing as a manager, where I                  eventually became a computer technician. During this time I began to teach myself how to code and make scripts.  Something                   that attracted me to programming was that I was able to lighten my workload by learning how to automate certain tasks. A vast                amount of my projects stem from automation.
+                </p>
+                <p>Besides having great work ethic I also like to be adventurous. I enjoy outdoor activities with my wife such as mountain                      biking, hiking, and kayaking. Being adventurous and challenged at the same time is something I enjoy.
+                </p>
+            </div>
+            <!--About section-->
+        </div>
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            <!--Experience-->
+            <!--TODO: componentize and load from api-->
+            <div class="experience-item shadow">
+                <div>
+                    <h3>AT&amp;T</h3>
+                    <h4>Web Developer – Node, Typescript, Ember, HTML, CSS</h4>
+                    <ul>
+                        <li>Collaborate with a small team of developers to create a product from the ground up with test
+                            driven development.</li>
+                        <li>Develop process to assist in an end user&#39;s (employee) work flow.</li>
+                        <li>Integrate APIs to troubleshoot, diagnose, create tickets, and escalate priority based on the issue.</li>
+                        <li>Peer code review and analysis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item shadow">
+                <div>
+                    <h3>Front Edge Marketing</h3>
+                    <h4>Junior Developer - Java, C#, PHP, HTML, CSS</h4>
+                    <ul>
+                        <li>Developed Inventory System to track equipment and parts. Application manage shipping and
+                            returned items. – Built with Java, JavaFX, C#, and MySQL.</li>
+                        <li>Developed application to connect to a web service for a list of settings; Configuring a computer
+                            properly with the proper settings. – Built with C# and PHP.</li>
+                        <li>Developed application to help stream line some processes of support when having to manipulate
+                            remote location databases. – Built with Java, MSSQL, and JavaFX.</li>
+                        <li>Developed application to change and manage password of servers from website. – Built with C#
+                            and PHP.</li>
+                        <li>Developed application to install programs and run commands on workstations across remote VPN
+                            networks. – Built with Java, JavaFX, PSEXEC, and MSSQL.</li>
+                        <li>Managed Company websites in PHP, JavaScript, HTML, and CSS.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item shadow">
+                <div>
+                    <h3>Front Edge Marketing</h3>
+                    <h4>System Administrator / Lead Technician / Guru</h4>
+                    <ul>
+                        <li>Offered 24/7 Customer support for Software, Hardware, and Networking.</li>
+                        <li>Oversaw QA testing – any errors that occurred were documented with attempt of replicating, then
+                            sent back to programmers with issued and error logs.</li>
+                        <li>Installed and configured Company software onto clients’ computers followed by training clients
+                            how to use the software.</li>
+                        <li>Created scripts and tools using Python and Shell for technicians and clients to install, service, and
+                            maintain software, while reducing the amount of time spent to set up software.</li>
+                        <li>Reduced Equipment and Installation cost saving the company money per installation.</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <!--Education-->
+            <!--TODO: componentize and load from api-->
+            <div class="education-item shadow">
+                <div>
+                    <h3>The Iron Yard</h3>
+                    <h3>Feb 2017 - May 2017</h3>
+                    <h4>Java Developer</h4>
+                    <p>Intense 12-week coding program developing web apps with CSS, HTML, Java, JavaScript, and SQL.</p>
+                </div>
+            </div>
 
-        <div class="project-item shadow">
-            <a href="https://quiet-gorge-97766.herokuapp.com/" target="_blank">
-                <img src="./images/jeopardy.png"/>
-            </a>
-            <div>
-                <h3>Jeopardy</h3>
-                <p>In this project, users play a Jeopardy-style game by flipping tiles to answer questions and earn points. </p>
-                <p><b>Tools:</b> Java, Spring, Thyme-leaf, JavaScript, jQuery, HTML, CSS, SQL, and Postgres.</p>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a><i class="fas fa-eye"></i></a>
+            <div class="education-item shadow">
+                <div>
+                    <h3>The Art Institute</h3>
+                    <h3>Feb 2010 - Dec 2011</h3>
+                    <h4>Associate of Applied Science: Culinary Arts</h4>
+                    <p></p>
+                </div>
+            </div>
+            <!--<h2>Courses</h2>-->
+
+        </div>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <!--projects-->
+            <!--TODO: componentize and load from api-->
+            <div class="project-item shadow">
+                <a href="http://ballad.herokuapp.com/" target="_blank">
+                    <img src="./images/ballad.png"/>
+                </a>
+                <div>
+                    <h3>Ballad</h3>
+                    <p>Ballad is an application that allows people of all ages to rhyme words for songs and poems. This application allows you to Create, Store, and share your ballads.</p>
+                    <p><b>Tools:</b> Java, Spring, Thyme-leaf, JavaScript, jQuery, HTML, CSS, Git, and PostgresSQL.</p>
+                    <div class="icon-right">
+                        <a href="https://github.com/joshuaeobrian/ballad"><i class="fab fa-github"></i></a>
+                        <a href="http://ballad.herokuapp.com/"><i class="fas fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item shadow">
+                <a href="https://quiet-gorge-97766.herokuapp.com/" target="_blank">
+                    <img src="./images/jeopardy.png"/>
+                </a>
+                <div>
+                    <h3>Jeopardy</h3>
+                    <p>In this project, users play a Jeopardy-style game by flipping tiles to answer questions and earn points. </p>
+                    <p><b>Tools:</b> Java, Spring, Thyme-leaf, JavaScript, jQuery, HTML, CSS, SQL, and Postgres.</p>
+                    <div class="icon-right">
+                        <a href="https://github.com/joshuaeobrian/jeopardy-quiz-game"><i class="fab fa-github"></i></a>
+                        <a href="https://quiet-gorge-97766.herokuapp.com/"><i class="fas fa-eye"></i></a>
+                    </div>
+
+                </div>
             </div>
         </div>
+        <!--TODO: Make into modal-->
+        <div id="overlay" class="contact">
+            <form>
+                <a id="close"><i class="fas fa-times"></i></a>
+                <h3>Get In Touch</h3>
+                <input type="text" placeholder="Name"/>
+                <input type="email" placeholder="Email"/>
+                <textarea placeholder="Your Message"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
     </div>
-    <!--TODO: Make into modal-->
-    <div id="contact">
-        <form>
-            <h3>Get In Touch</h3>
-            <input type="text" placeholder="Name"/>
-            <input type="email" placeholder="Email"/>
-            <textarea placeholder="Your Message"></textarea>
-            <button>Send</button>
-        </form>
-    </div>
-
     <footer>
+        <div id="bottom-split"></div>
         <div></div>
         <div></div>
-        <!--copy right-->
-
-        <!--Icons-->
         <ul>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/joshuaeobrian"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/joshuaeobrian/"><i class="fab fa-linkedin"></i></a></li>
             <li><a><i class="fab fa-stack-overflow"></i></a></li>
-            <li><a><i class="fab fa-google-plus-square"></i></a></li>
+            <li><a href="https://plus.google.com/u/0/105275164334964028369"><i class="fab fa-google-plus-square"></i></a></li>
         </ul>
         <div id="copyright">
             <h5>Copyright&copy;  2018 Joshua OBrian</h5>
         </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--<script src="vendors/react.js"></script>-->
-    <!--<script src="vendors/react-dom.js"></script>-->
-    <!--<script src="vendors/babel-browser.min.js"></script>-->
-    <!--<script type="text/babel" src="js/app.jsx"></script>-->
+    <script src="vendors/react.js"></script>
+    <script src="vendors/react-dom.js"></script>
+    <script src="vendors/babel-browser.min.js"></script>
+    <script type="text/babel" src="js/app.jsx"></script>
+
 </body>
 </html>

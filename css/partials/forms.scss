@@ -1,22 +1,30 @@
-#contact{
-  //display: none;
+.contact{
+  display: none;
   background: #345995;
-  padding: 25px 0;
+  padding: 10% 0;
 
   form{
+    background: #345995;
     font-size: 1.5rem;
     text-align: center;
-    width: 30%;
+    width: 50%;
+    border-radius: 5px;
     margin: 0 auto;
-    //padding: 0 30%;
+    padding: 0 0 50px 0;
     display: grid;
-    grid-template-columns: 5fr;
+    grid-template-columns: 1fr;
+    a{
+      color: #fff;
+      float: right;
+      text-align: right;
+      margin: 10px;
+    }
     h3{
       color: #fff;
     }
     input{
       height:30px;
-      margin-bottom: 5px;
+
     }
 
     textarea{
@@ -25,6 +33,7 @@
       resize:none;
     }
     input, textarea{
+      margin: 5px auto;
       color: white;
       padding: 5px;
       background: rgba(0,0,0,.3);
@@ -46,6 +55,8 @@
       border: none;
       height: 35px;
       border-radius: 5px;
+      width:30rem !important;
+      margin: 5px auto;
     }
   }
 }
