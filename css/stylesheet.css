@@ -8,9 +8,12 @@
     margin: 25px auto;
     border-bottom: 3px solid #78A8E2; }
   #about div {
-    width: 75%;
+    width: 80%;
     font-size: 1.5rem;
     margin: 10px auto; }
+    #about div p {
+      text-indent: 50px;
+      margin-right: 23%; }
 
 #education h2 {
   width: 25%;
@@ -185,6 +188,7 @@ nav {
     text-align: center; }
     #header div #profile-image {
       margin-top: 50px;
+      border-radius: 5px;
       height: 350px;
       width: 350px; }
     #header div h1 {
@@ -239,6 +243,29 @@ nav {
   /*-khtml-opacity: 0.5;*/
   /*opacity: .8;*/
   z-index: 10000; }
+
+#side-scroll-nav {
+  position: sticky;
+  top: 50px;
+  float: right;
+  z-index: 1000; }
+  #side-scroll-nav button {
+    color: white;
+    border: none;
+    background: #78A8E2;
+    margin: 5px;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    outline: none; }
+  #side-scroll-nav button:hover {
+    color: #78A8E2;
+    background: #345995;
+    border-color: #78A8E2;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.9); }
+  #side-scroll-nav button:active {
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.9);
+    outline: none; }
 
 footer {
   display: grid;
