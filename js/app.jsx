@@ -46,4 +46,9 @@ $(document).ready(function () {
         scrollTo(position);
         return false;
     });
+
+    $("#download").click(function() {
+        // // hope the server sets Content-Disposition: attachment!
+        window.location = './resources/JoshuaOBrianResume.pdf';
+    });
 });
